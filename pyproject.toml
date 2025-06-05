@@ -1,6 +1,6 @@
 [project]
-name = "text2sql"
-version = "1.0.0"
+name = "simple-text2sql"
+version = "1.0.1"
 description = "A simple implementation of Text2SQL."
 readme = "README.md"
 requires-python = ">=3.12.3"
@@ -13,6 +13,10 @@ dependencies = [
     "pymysql>=1.1.1",
     "sqlalchemy>=2.0.41",
 ]
+
+[project.urls]
+Homepage = "https://github.com/secretpot/text2sql"
+Repository = "https://github.com/secretpot/text2sql"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
