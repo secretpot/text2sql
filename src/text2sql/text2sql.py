@@ -85,6 +85,9 @@ class Text2SQL:
             ]).content
         )
 
+    def run(self, query: str, tables: list[str] = None):
+        return self.__call__(query, tables)
+
     def query_prompt_info(
             self,
             query: str, tables: list[str] = None,
