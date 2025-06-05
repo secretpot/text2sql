@@ -1,7 +1,24 @@
 [project]
 name = "text2sql"
-version = "0.1.0"
-description = "Add your description here"
+version = "1.0.0"
+description = "A simple implementation of Text2SQL."
 readme = "README.md"
 requires-python = ">=3.12.3"
-dependencies = []
+dependencies = [
+    "langchain-ollama>=0.3.3",
+    "langchain-openai>=0.3.19",
+    "psycopg2-binary>=2.9.10",
+    "pydantic>=2.11.5",
+    "pymilvus>=2.5.10",
+    "pymysql>=1.1.1",
+    "sqlalchemy>=2.0.41",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"text2sql" = ["resources/**/*"]
